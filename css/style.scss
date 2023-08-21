@@ -1,0 +1,99 @@
+// Common styling for all pages
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    header {
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    nav {
+        text-align: right;
+
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Styling specific to Google Search page
+.search-container {
+    text-align: center;
+    margin: 60px auto;
+
+    #search-input {
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        width: 50%;
+    }
+
+    #search-btn,
+    #lucky-btn {
+        display: inline-block;
+        margin: 10px auto;
+        padding: 20px 20px;
+        border-radius: 20px;
+        background-color: #4285f4;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+// Styling specific to Google Advanced Search page
+.advanced-search-container {
+    margin: 60px auto;
+    width: 50%;
+
+    .input-group {
+        margin: 20px 0;
+    }
+
+    .input-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #advanced-search-btn {
+        background-color: #4285f4;
+        color: #fff;
+        border: none;
+        padding: 20px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+// Styling specific to Google Image Search page
+#image-search-input {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+#image-search-btn {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: #4285f4;
+    color: #fff;
+    text-decoration: none;
+}

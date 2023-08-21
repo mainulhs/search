@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+body nav {
+  text-align: right;
+}
+body nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+body nav a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  text-align: center;
+  margin: 60px auto;
+}
+.search-container #search-input {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+.search-container #search-btn,
+.search-container #lucky-btn {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: #4285f4;
+  color: #fff;
+  text-decoration: none;
+}
+
+.advanced-search-container {
+  margin: 60px auto;
+  width: 50%;
+}
+.advanced-search-container .input-group {
+  margin: 20px 0;
+}
+.advanced-search-container .input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.advanced-search-container .input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.advanced-search-container #advanced-search-btn {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#image-search-input {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+#image-search-btn {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: #4285f4;
+  color: #fff;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

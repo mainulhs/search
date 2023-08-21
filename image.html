@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Google Image Search</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Google Search</a>
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="image-search-input" placeholder="Search Google Images">
+            <br>
+            <a href="https://www.google.com/search?q=" id="image-search-btn">Google Image Search</a>
+        </div>
+    </main>
+</body>
+<script>
+    const imageSearchInput = document.getElementById('image-search-input');
+    const imageSearchBtn = document.getElementById('image-search-btn');
+
+    imageSearchInput.addEventListener('keyup', function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            imageSearchBtn.click();
+        }
+    });
+
+    imageSearchBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        const query = imageSearchInput.value;
+        window.location.href = 'https://www.google.com/search?q=' + query + '&tbm=isch';
+    });
+</script>
+</html>

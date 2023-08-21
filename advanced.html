@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Google Advance Search</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Google Search</a>
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </nav>
+    </header>
+    <main>
+        <div class="advanced-search-container">
+            <form action="https://www.google.com/search" id="advanced-search-form">
+                <div class="input-group">
+                    <label for="all-words">Find pages with all these words:</label>
+                    <input type="text" id="all-words" name="as_q">
+                </div>
+                <div class="input-group">
+                    <label for="exact-phrase">Find pages with this exact word or phrase:</label>
+                    <input type="text" id="exact-phrase" name="as_epq">
+                </div>
+                <div class="input-group">
+                    <label for="any-words">Find pages with any of these words:</label>
+                    <input type="text" id="any-words" name="as_oq">
+                </div>
+                <div class="input-group">
+                    <label for="none-words">Find pages with none of these words:</label>
+                    <input type="text" id="none-words" name="as_eq">
+                </div>
+                <button type="submit" id="advanced-search-btn">Advanced Search</button>
+            </form>
+        </div>
+    </main>
+</body>
+<script>
+    const advancedSearchForm = document.getElementById('advanced-search-form');
+    const advancedSearchBtn = document.getElementById('advanced-search-btn');
+
+    advancedSearchForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const allWords = document.getElementById('all-words').value;
+        const exactPhrase = document.getElementById('exact-phrase').value;
+        const anyWords = document.getElementById('any-words').value;
+        const noneWords = document.getElementById('none-words').value;
+        window.location.href = 'https://www.google.com/search?q=' + allWords + '&as_epq=' + exactPhrase + '&as_oq=' + anyWords + '&as_eq=' + noneWords;
+    });
+</script>
+</html>
